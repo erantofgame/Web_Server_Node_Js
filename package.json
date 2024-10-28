@@ -1,12 +1,21 @@
 {
   "name": "node_js",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "test upload file",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "upload",
+    "file",
+    "game",
+    "node",
+    "js"
+  ],
+  "author": "tuyen",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
