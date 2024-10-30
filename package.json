@@ -2,8 +2,9 @@
   "name": "node_js",
   "version": "1.0.0",
   "description": "test upload file",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
+    "start": "nodemon --inspect ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +17,10 @@
   "author": "tuyen",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
   }
 }
