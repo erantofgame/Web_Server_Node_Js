@@ -6,6 +6,8 @@ const handlebars = require("express-handlebars");
 const app = express();
 const port = 3000;
 
+app.use(express.static(path.join(__dirname,'public')))
+
 // HTTP logger
 app.use(morgan('combined'));
 // Template engine 
@@ -23,3 +25,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 })
+//"watch":"node-sass --watch src/resources/scss -o src/public/css",
